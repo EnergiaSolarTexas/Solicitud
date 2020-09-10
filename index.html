@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Programa Solar de Texas</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <img src="logo pst.png" class="imgLogo" />
+
+      <h1 class="formulario__titulo">Progama Solar de Texas</h1>
+      <h3 class="formulario__subtitulo">Solicitud</h3>
+      <p class="formulario__parrafo">
+        Llena este formulario para aplicar al programa y tener un año de Energia Gratis.
+      </p>
+
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre completo?</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu nombre completo"
+      />
+      <label for="direccion" class="formulario__label">¿Cuál es tu direccion de Domicilio?</label>
+      <input
+        id="direccion"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica tu direccion de Domicilio"
+      />
+      <label for="codigo" class="formulario__label">¿Cuál es tu Zip Code?</label>
+      <input
+        id="codigo"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica tu codigo postal"
+        />
+
+      <label for="propietario" class="formulario__label"
+        >¿Es usted el propietario de la vivienda?</label
+      >
+      <select id="propietario" name="opcion de propietario" class="formulario__input">
+        <option>Si</option>
+        <option>No</option>
+      </select>
+
+      <label for="servicio" class="formulario__label"
+        >Tipo de Propiedad</label
+      >
+      <select id="servicio" name="listaservicios" class="formulario__input">
+        <option>Casa</option>
+        <option>Rancho</option>
+        <option>Edificio</option>
+        <option>Trailer Simentado</option>
+      </select>
+
+      <label for="credito" class="formulario__label">¿Cuál es su record crediticio?</label>
+      <input
+        id="credito"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cual es su record crediticio"
+      />
+
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar Solicitud</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
